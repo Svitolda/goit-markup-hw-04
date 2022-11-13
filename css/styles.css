@@ -134,17 +134,31 @@ margin-right: 93px;
   color: var(--accent);
 }
 
-/* ------------------------section styles------------------------------ */
+/* ------------------------hero styles------------------------------ */
 
 
 .hero{
+height: 600px;
 background-color: var(--section-color);
-padding: 200px 0;
+background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), 
+  url('../images/hero.jpg');
+background-repeat: no-repeat;
+background-color: #C4C4C4;
+background-position: center;
+text-align: center;
+padding-top: 200px;
+padding-bottom: 200px; 
+background-size: cover;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .section-title {
   width: 696px;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -191,6 +205,35 @@ padding: 200px 0;
 
 .about-list-item{
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.about-list-item::before{
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.icon-antena::before{
+  background-image: url(../images/antena.svg);
+}
+
+.icon-clock::before{
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagrama::before{
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before{
+  background-image: url(../images/astronaut.svg);
 }
 
 .about-title {
